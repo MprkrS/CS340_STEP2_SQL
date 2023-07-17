@@ -1,5 +1,5 @@
-SET FOREIGN_KEY_CHECKS = 0;
-
+SET FOREIGN_KEY_CHECKS=0;
+SET AUTOCOMMIT = 0;
 -- Create Zoo_Animals table
 CREATE TABLE Zoo_Animals (
   animal_id INT UNIQUE AUTO_INCREMENT,
@@ -111,3 +111,5 @@ INSERT INTO `cs340_simmomat`.`Animal_Location_Histories` (`location_history_id`,
 INSERT INTO `cs340_simmomat`.`Animal_Location_Histories` (`location_history_id`, `animal_id`, `start_date`, `end_date`) VALUES ('4', '5', '2022-02-20', '2022-11-10');
 INSERT INTO `cs340_simmomat`.`Animal_Location_Histories` (`location_history_id`, `animal_id`, `start_date`, `end_date`) VALUES ('5', '3', '2021-06-10', '2022-12-31');
 
+SET FOREIGN_KEY_CHECKS=1;
+COMMIT;
